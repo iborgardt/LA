@@ -1,0 +1,24 @@
+mc
+cat .bash_history
+sudo apt-get install git mc
+mc
+exit
+cat .bash_history
+mc
+mkdir la
+cd la
+git init
+touch README.md
+ls
+ls -a
+vim README.md 
+cat ../.bash_history 
+vim README.md 
+cat README.md 
+git add README.md
+git status
+git commit -m "Initial commit"
+git log
+git remote add origin https://github.com/iborgardt/LA.git
+git push -u origin master
+history -a
