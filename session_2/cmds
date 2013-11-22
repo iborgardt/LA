@@ -1,0 +1,3 @@
+ps aux | grep '[[].*[]]$'
+ps aux | fgrep [ | fgrep -v grep
+ps -t ? -o pid,user,comm
