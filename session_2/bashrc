@@ -1,0 +1,10 @@
+# To use this bashrc please include this line in the ~/.bashrc:
+# source 'path/to/bashrc/bashrc
+alias gd='git diff'
+alias gs='git status'
+alias ga='git add'
+alias gc='git commit'
+alias gl='git log --oneline'
+alias clean='rm -rf *.pyc *.swp'
+alias cdw='cd ~/LA/'
+
