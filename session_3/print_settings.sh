@@ -1,3 +1,4 @@
+#!/bin/bash
 source settings.conf
 cat << EndOfLine
 ###########################################
