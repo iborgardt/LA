@@ -18,14 +18,13 @@ done
 echo "Current tasks:"
 cat "$tasks" | tr ' ' '_'
 
-exec 3 < &0
-exec < "$work_table"
+exec 3>&1
+exec > "$work_table"
 
 echo "Assigned tasks:"
 paste -d'=' $names $tasks
 echo "Date: `date +%m/%d/%Y` Time: `date +%H:%M:%S`"
-exec 0 < &3
-exec 3 < &-
+exec 1>&3 3>&-
 
 echo "Assigning: DONE"
 echo "Worker list: $workers"
