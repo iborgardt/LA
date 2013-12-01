@@ -1,0 +1,1 @@
+19 21 * * 7 find ~ -name '*.log' -mtime +29 -exec rm {} \;  2>/dev/null
