@@ -1,0 +1,13 @@
+#!/bin/bash
+
+RES=1
+
+[ "$1" -lt 0 ] && { echo "Error: argument must be greater or equal 0!";
+		    exit 1; }
+
+for ((i=2; i <= $1; i++)); do
+	RES=$(($i * $RES))
+done
+
+echo "$1! = $RES"
+
