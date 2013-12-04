@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo "Input numbers. Press Ctrl-D when you have finished."
+
+SUM=0
+i=1
+
+for num in `cat`; do
+	[ "$i" -ge "$1" -a "$i" -le "$2" ] && SUM=$((SUM + num))
+	((i++))
+done
+
+echo "Sum of sequence[$1, $2] is $SUM"
